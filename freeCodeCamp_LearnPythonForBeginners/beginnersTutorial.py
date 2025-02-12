@@ -125,8 +125,8 @@ print(int(num1) + int(num2))        #this will add the two numbers together and 
 
 #BUILDING A BETTER CALCULATOR
 #we want to convert the inputs to floats so that we can do decimal points as well
-num1 = float(input("Enter a number: "))
-num2 = float(input("Enter another number: "))
+#num1 = float(input("Enter a number: "))
+#num2 = float(input("Enter another number: "))
 
 #now we can use +, -, /, and * without worrying about what type of number they are
 
@@ -135,3 +135,19 @@ print(num1 + num2)
 #-----------------------------------------------------------------
 #leaving @ 57:39 / 4:26:52 - Building a Better Calculator >
 #-----------------------------------------------------------------
+
+#INDEX VALUES -> basic list, hardcoded
+friends = ["Kevin", "Karen", "Jim"]
+print(friends) #prints all the elements within the list
+
+luckyNumbers = [4,8,15,16]
+
+#add list items to another list
+friends.extend(luckyNumbers)
+print(friends)
+
+#append method
+friends.append("Creed") #add Creed to the END of a list
+
+#insert method
+friends.insert(1, "Karen")
